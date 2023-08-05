@@ -162,10 +162,11 @@ nav {
   display: grid;
   gap: 3rem;
   /* grid-row-gap: 3rem; */
-  margin: 0 15%;
+  margin: 1rem 10%;
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 0;
-  margin-bottom: 10rem;
+  /* margin-bottom: 1rem; */
+
 }
 
 .grid-wrapper-icons .img-sec {
@@ -173,11 +174,18 @@ nav {
   margin: auto;
 }
 
-.grid-wrapper-icons .img-sec img {
-  width: 12rem;
+.grid-wrapper-icons .img-sec {
+  background: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1rem;
 }
 
-.grid-wrapper-icons .width-6 img {
+.grid-wrapper-icons .img-sec img {
+  width: 100%;
+  height: 4rem;
+}
+
+/* .grid-wrapper-icons .width-6 img {
   width: 6rem;
 }
 
@@ -187,7 +195,7 @@ nav {
 
 .grid-wrapper-icons .width-10 img {
   width: 10rem;
-}
+} */
 
 .item {
   /* width: 12rem; */
@@ -268,6 +276,24 @@ footer p {
 
 .rizwan a {
   color: black;
+}
+
+/* badges section */
+
+.badges-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.badges-grid .badge img {
+  width: 10rem;
+}
+
+.badges-grid .badge:nth-child(1) {
+  margin-left: auto;
 }
 
 .gradient-img-1,
@@ -387,6 +413,7 @@ footer p {
 
   .intro-section .sec-1 {
     align-items: center;
+    margin: 1rem 0;
   }
 
   .intro-section .sec-2 img {
@@ -395,6 +422,16 @@ footer p {
     margin: 30px auto;
     /* border-radius: 10px; */
     width: 100%;
+  }
+
+  .badges-grid{
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+  }
+
+  .badges-grid .badge{
+    display: block;
+    margin: 1rem auto;
   }
 }
 
