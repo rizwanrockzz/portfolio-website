@@ -1,12 +1,54 @@
-# React + Vite
+# Rizwan's Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Created with the help of [VITE](https://vite.dev/guide/) : ReactJS + SWC
 
-Currently, two official plugins are available:
+## Site Depoly Process To Github Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Install the github pages package
+```shell
+$ npm install gh-pages --save-dev
+```
 
-## Expanding the ESLint configuration
+- Add homepage in package.json as this is deployed with custom domain directly adding domain.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```diff
+{
+  "name": "latest-portfolio-website",
+  "version": "1.0.0",
++  "homepage": "https://rizwanrockzz.tech/",
+  ....
+}
+```
+
+- Added base in vite.config.js but can be left blank as it defaults to '/'
+
+```diff
+export default defineConfig({
+   plugins: [react()],
++  base: '/',
+})
+```
+
+- Added two new commands in scripts section of package.json
+    - Copying CNAME file with every deploy as the dist folder will be updated in gh-pages branch
+
+```diff
+ "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
++   "predeploy": "npm run build && cp CNAME dist/",
++   "deploy": "gh-pages -d dist"
+  },
+```
+
+- Run the final command for deployment
+
+```shell
+$ npm run deploy -- -m "custom message"
+```
+
+- In the pages select select option deploy from branch and select gh-pages branch and click save in the bottom add custom domain and check the enforce https check box for SSL
+
+- In a few minutes site will be live on our custom domain
