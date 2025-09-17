@@ -49,6 +49,6 @@ export default defineConfig({
     npm run deploy -- -m "custom message"
 ```
 
-- In the pages select select option deploy from branch and select gh-pages branch and click save in the bottom add custom domain and check the enforce https check box for SSL
+- In the pages section select option deploy from branch and select gh-pages branch and click save in the bottom add custom domain and check the enforce https check box for SSL
 
 - In a few minutes site will be live on our custom domain
