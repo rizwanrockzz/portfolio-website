@@ -6,15 +6,15 @@ Created with the help of [VITE](https://vite.dev/guide/) : ReactJS + SWC
 
 - Install the github pages package
 ```shell
-$ npm install gh-pages --save-dev
+    npm install gh-pages --save-dev
 ```
 
 - Add homepage in package.json as this is deployed with custom domain directly adding domain.
 
 ```diff
 {
-  "name": "latest-portfolio-website",
-  "version": "1.0.0",
+   "name": "latest-portfolio-website",
+   "version": "1.0.0",
 +  "homepage": "https://rizwanrockzz.tech/",
   ....
 }
@@ -46,7 +46,7 @@ export default defineConfig({
 - Run the final command for deployment
 
 ```shell
-$ npm run deploy -- -m "custom message"
+    npm run deploy -- -m "custom message"
 ```
 
 - In the pages select select option deploy from branch and select gh-pages branch and click save in the bottom add custom domain and check the enforce https check box for SSL
