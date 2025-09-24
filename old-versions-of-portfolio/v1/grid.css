@@ -130,7 +130,7 @@ nav {
 }
 
 .stylish-underline::after {
-  background-image: url(images/underline-3.png);
+  background-image: url("/images/underline-3.png");
   background-repeat: no-repeat;
   background-size: 88% 80%;
   content: "";
@@ -166,7 +166,6 @@ nav {
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem 0;
   /* margin-bottom: 1rem; */
-
 }
 
 .grid-wrapper-icons .img-sec {
@@ -424,12 +423,12 @@ footer p {
     width: 100%;
   }
 
-  .badges-grid{
+  .badges-grid {
     grid-template-columns: 1fr;
     margin-bottom: 1rem;
   }
 
-  .badges-grid .badge{
+  .badges-grid .badge {
     display: block;
     margin: 1rem auto;
   }
