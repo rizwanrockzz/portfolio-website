@@ -345,6 +345,21 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
+.site-version span {
+  background: #8360c3;
+  background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
+  background: linear-gradient(to right, #2ebf91, #8360c3);
+  padding: 2px 6px;
+  border-top-left-radius: 6px;
+  color: white;
+}
+
+.site-version {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 @media only screen and (max-width: 1030px) {
   .footer {
     margin: 5.5rem auto 1rem auto;

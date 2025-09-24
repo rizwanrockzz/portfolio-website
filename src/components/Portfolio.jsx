@@ -2,6 +2,7 @@ import './Portfolio.css';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
+import packageJson from "../../package.json";
 
 const Portfolio = () => {
     return <>
@@ -81,9 +82,6 @@ const Portfolio = () => {
             <div className="img-sec">
                 <img src="/images/expressjs.svg" alt="expressjs" />
             </div>
-            {/* <!-- <div className="img-sec width-6">
-                                <img src="/images/ejs.svg" alt="ejs" />
-                            </div> --> */}
             <div className="img-sec width-6">
                 <img src="/images/tailwindcss.svg" alt="tailwindcss" />
             </div>
@@ -116,12 +114,20 @@ const Portfolio = () => {
                 <span className="rizwan">
                     <a href="https://www.linkedin.com/in/rizwanullah-mohammad/">RIZWAN</a>
                 </span>
+
             </p>
         </footer>
+        <div className="site-version">
+            <span>
+                {packageJson.version}
+            </span>
+        </div>
+
 
         <img className="gradient-img-1" src="images/gradient-1.png" alt="gradient" />
         <img className="gradient-img-2" src="images/gradient-2.png" alt="gradient" />
         <img className="gradient-img-3" src="images/gradient-3.png" alt="gradient" />
+
         <div className="social-links">
             <a href="https://github.com/rizwanrockzz" className="github-link">
                 <FaGithub />
