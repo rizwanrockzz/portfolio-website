@@ -6,18 +6,18 @@ import OnlineStatus from "./components/OnlineStatus";
 
 const App = () => {
   const isOnline = OnlineStatus();
-  console.log("isOnline : ", isOnline);
+  // console.log("isOnline : ", isOnline);
 
   if (!isOnline) {
     return <OfflineNotice />;
   }
 
-  return (
+  return <>
     <Routes>
       <Route path="/" element={<Portfolio />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
-  )
+  </>
 
 }
 

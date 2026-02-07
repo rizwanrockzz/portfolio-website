@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const OnlineStatus = (pingUrl = "/ping.txt", interval = 60000) => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
-  console.log("isOnline OnlineStatus : ", isOnline);
+  // console.log("isOnline OnlineStatus : ", isOnline);
 
   useEffect(() => {
     let timer;

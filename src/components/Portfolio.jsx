@@ -1,8 +1,8 @@
 import './Portfolio.css';
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaHeart } from "react-icons/fa";
+import { FaLinkedin, FaHeart, FaGithub } from "react-icons/fa";
 import packageJson from "../../package.json";
+import { Tooltip } from 'antd';
+import { skills } from './common';
 
 const Portfolio = () => {
     return <>
@@ -58,33 +58,16 @@ const Portfolio = () => {
         </div>
 
         <div className="grid-wrapper-icons">
-            <div className="img-sec">
-                <img src="/images/reactjs-2.svg" alt="reactjs" />
-            </div>
-            <div className="img-sec width-8">
-                <img src="/images/nextjs.svg" alt="nextjs" />
-            </div>
-            <div className="img-sec width-6">
-                <img src="/images/bootstrap-5.svg" alt="bootstrap" />
-            </div>
-            <div className="img-sec">
-                <img src="/images/postgresql.svg" alt="postgresql" />
-            </div>
-            <div className="img-sec">
-                <img src="/images/mongodb.svg" alt="mongodb" />
-            </div>
-            <div className="img-sec width-10">
-                <img src="/images/mysql.svg" alt="mysql" />
-            </div>
-            <div className="img-sec">
-                <img src="/images/nodejs.svg" alt="nodejs" />
-            </div>
-            <div className="img-sec">
-                <img src="/images/expressjs.svg" alt="expressjs" />
-            </div>
-            <div className="img-sec width-6">
-                <img src="/images/tailwindcss.svg" alt="tailwindcss" />
-            </div>
+            {skills?.map((skill) => {
+                return (
+                    <Tooltip placement="top" title={skill.name} key={skill.name} color={'#e100ff'}>
+                        <div className="img-sec">
+                            {console.log("skill : ", skill)}
+                            <img src={skill.imagePath} alt={skill.name} />
+                        </div>
+                    </Tooltip>
+                )
+            })}
         </div>
 
         <div className="portfolio-heading">
@@ -139,4 +122,4 @@ const Portfolio = () => {
     </>
 }
 
-export default Portfolio
+export default Portfolio;
