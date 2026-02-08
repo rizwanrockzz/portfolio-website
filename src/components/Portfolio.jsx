@@ -9,17 +9,17 @@ const Portfolio = () => {
         <div className="intro-section">
             <div className="sec-1">
                 <div className="hello-text">
-                    <h1>Hi there</h1>
+                    <h1>Hi&nbsp;</h1>
                     <img src="images/waving-hand.png" alt="waving-hand" />
                     <h1><span className="dot">,</span></h1>
                 </div>
-                <h1>I am Rizwanullah<span className="dot">,</span></h1>
-                <h1><span className="web">Full Stack</span><span className="dot">.</span></h1>
-                <h1><span className="web">Web</span> Developer<span className="dot">.</span></h1>
+                <h1>I am Rizwanullah</h1>
+                <h1><span className="web">Full Stack</span></h1>
+                {/* <h1><span className="web">Web</span> Developer<span className="dot">.</span></h1> */}
+                <h1>Developer</h1>
             </div>
             <div className="sec-2">
-                {/* <!-- <img src="images/rizwan.JPG" alt="rizwan"> --> */}
-                <img src="images/rizwan-main-logo-edited.png" alt="rizwan" />
+                <img src="images/profiles/rizwan-profile-1.png" alt="Rizwanullah Mohammad" />
             </div>
         </div>
 
@@ -60,7 +60,7 @@ const Portfolio = () => {
         <div className="grid-wrapper-icons">
             {skills?.map((skill) => {
                 return (
-                    <Tooltip placement="top" title={skill.name} key={skill.name} color={'#e100ff'}>
+                    <Tooltip placement="top" title={skill.name} key={skill.name} color={"#7f00ff"}>
                         <div className="img-sec">
                             {console.log("skill : ", skill)}
                             <img src={skill.imagePath} alt={skill.name} />

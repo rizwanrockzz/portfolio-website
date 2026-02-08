@@ -1,7 +1,11 @@
 export const skills = [
     {
-        name: "Javascript",
+        name: "JavaScript",
         imagePath: "/images/js.svg",
+    },
+    {
+        name: "EJS",
+        imagePath: "/images/ejs.svg",
     },
     {
         name: "React",
@@ -36,6 +40,14 @@ export const skills = [
         imagePath: "/images/nextjs.svg",
     },
     {
+        name: "Amazon Web Services",
+        imagePath: "/images/aws.svg",
+    },
+    {
+        name: "Google Cloud",
+        imagePath: "/images/gcloud.svg",
+    },
+    {
         name: "PostgreSQL",
         imagePath: "/images/postgresql.svg",
     },
@@ -48,23 +60,19 @@ export const skills = [
         imagePath: "/images/mongodb.svg",
     },
     {
-        name: "Postman",
-        imagePath: "/images/postman.svg",
+        name: "Firebase",
+        imagePath: "/images/firebase.svg",
     },
     {
-        name: "Amazon Web Services",
-        imagePath: "/images/aws.svg",
-    },
-    {
-        name: "Google Cloud",
-        imagePath: "/images/gcloud.svg",
-    },
-    {
-        name: "Github",
+        name: "GitHub",
         imagePath: "/images/github.svg",
     },
     {
-        name: "Gitlab",
+        name: "GitLab",
         imagePath: "/images/gitlab.svg",
+    },
+    {
+        name: "Postman",
+        imagePath: "/images/postman.svg",
     },
 ];
