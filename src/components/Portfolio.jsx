@@ -23,7 +23,7 @@ const Portfolio = () => {
             </div>
         </div>
 
-        <hr className="style-hr" />
+        {/* <hr className="style-hr" /> */}
 
         <div className="portfolio-heading">
             <h1>Current <span className="stylish-underline">Projects</span></h1>
@@ -33,7 +33,7 @@ const Portfolio = () => {
             <a className="item flex" href="https://tpsmartsol.com/" target="_blank">TP SmartSol</a>
         </div>
 
-        <hr className="style-hr" />
+        {/* <hr className="style-hr" /> */}
 
         <div className="portfolio-heading">
             <h1>Past <span className="stylish-underline">Projects</span></h1>
@@ -51,7 +51,7 @@ const Portfolio = () => {
 
         </div>
 
-        <hr className="style-hr" />
+        {/* <hr className="style-hr" /> */}
 
         <div className="portfolio-heading">
             <h1>My <span className="stylish-underline">Skills</span></h1>
