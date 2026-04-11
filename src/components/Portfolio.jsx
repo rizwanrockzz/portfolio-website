@@ -62,7 +62,6 @@ const Portfolio = () => {
                 return (
                     <Tooltip placement="top" title={skill.name} key={skill.name} color={"#7f00ff"}>
                         <div className="img-sec">
-                            {console.log("skill : ", skill)}
                             <img src={skill.imagePath} alt={skill.name} />
                         </div>
                     </Tooltip>
