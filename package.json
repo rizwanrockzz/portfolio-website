@@ -3,11 +3,11 @@
   "private": true,
   "version": "1.0.5",
   "type": "module",
-  "homepage": "https://rizwanrockzz.tech/",
+  "homepage": "https://rizwanrockzz.github.io/portfolio-website/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "copy dist\\index.html dist\\404.html && copy CNAME dist\\CNAME",
+    "postbuild": "copy dist\\index.html dist\\404.html",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",

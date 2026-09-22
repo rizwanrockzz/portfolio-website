@@ -1,78 +1,80 @@
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 export const skills = [
     {
         name: "JavaScript",
-        imagePath: "/images/js.svg",
+        imagePath: asset("images/js.svg"),
     },
     {
         name: "EJS",
-        imagePath: "/images/ejs.svg",
+        imagePath: asset("images/ejs.svg"),
     },
     {
         name: "React",
-        imagePath: "/images/reactjs.svg",
+        imagePath: asset("images/reactjs.svg"),
     },
     {
         name: "Vite",
-        imagePath: "/images/vite.svg",
+        imagePath: asset("images/vite.svg"),
     },
     {
         name: "Redux",
-        imagePath: "/images/redux.svg",
+        imagePath: asset("images/redux.svg"),
     },
     {
         name: "Ant Design",
-        imagePath: "/images/antd.svg",
+        imagePath: asset("images/antd.svg"),
     },
     {
         name: "Bootstrap",
-        imagePath: "/images/bootstrap-5.svg",
+        imagePath: asset("images/bootstrap-5.svg"),
     },
     {
         name: "Node",
-        imagePath: "/images/nodejs.svg",
+        imagePath: asset("images/nodejs.svg"),
     },
     {
         name: "Express",
-        imagePath: "/images/expressjs.svg",
+        imagePath: asset("images/expressjs.svg"),
     },
     {
         name: "Next",
-        imagePath: "/images/nextjs.svg",
+        imagePath: asset("images/nextjs.svg"),
     },
     {
         name: "Amazon Web Services",
-        imagePath: "/images/aws.svg",
+        imagePath: asset("images/aws.svg"),
     },
     {
         name: "Google Cloud",
-        imagePath: "/images/gcloud.svg",
+        imagePath: asset("images/gcloud.svg"),
     },
     {
         name: "PostgreSQL",
-        imagePath: "/images/postgresql.svg",
+        imagePath: asset("images/postgresql.svg"),
     },
     {
         name: "MySQL",
-        imagePath: "/images/mysql.svg",
+        imagePath: asset("images/mysql.svg"),
     },
     {
         name: "MongoDB",
-        imagePath: "/images/mongodb.svg",
+        imagePath: asset("images/mongodb.svg"),
     },
     {
         name: "Firebase",
-        imagePath: "/images/firebase.svg",
+        imagePath: asset("images/firebase.svg"),
     },
     {
         name: "GitHub",
-        imagePath: "/images/github.svg",
+        imagePath: asset("images/github.svg"),
     },
     {
         name: "GitLab",
-        imagePath: "/images/gitlab.svg",
+        imagePath: asset("images/gitlab.svg"),
     },
     {
         name: "Postman",
-        imagePath: "/images/postman.svg",
+        imagePath: asset("images/postman.svg"),
     },
 ];
