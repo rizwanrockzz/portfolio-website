@@ -3,5 +3,6 @@ import react from '@vitejs/plugin-react-swc'
 
 export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: command === 'build' ? '/portfolio-website/' : '/',
+  // base: command === 'build' ? '/portfolio-website/' : '/',
+  base: '/',
 }))

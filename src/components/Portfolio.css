@@ -125,7 +125,7 @@ nav {
 }
 
 .stylish-underline::after {
-  background-image: url("/portfolio-website/images/underline-2.png");
+  background-image: url("/images/underline-2.png");
   background-repeat: no-repeat;
   background-size: 88% 80%;
   content: "";
