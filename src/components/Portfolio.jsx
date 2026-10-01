@@ -16,12 +16,12 @@ const Portfolio = () => {
                         <img src={asset("images/waving-hand.png")} alt="waving-hand" />
                     </div>
 
-                    <h1>I am Rizwanullah</h1>
+                    {/* <h1>I am Rizwanullah</h1> */}
+                    <h1>I am Rizwan<span className="dot">!</span></h1>
                     <h1>
                         <span className="web">Full Stack</span>
                     </h1>
-                    {/* <h1><span className="web">Web</span> Developer<span className="dot">.</span></h1> */}
-                    <h1>Developer</h1>
+                    <h1>Engineer</h1>
                 </div>
 
                 <div className="sec-2">
