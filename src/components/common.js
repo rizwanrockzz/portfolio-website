@@ -82,6 +82,10 @@ export const skills = [
         imagePath: asset("images/websocket.svg"),
     },
     {
+        name: "WordPress",
+        imagePath: asset("images/wordpress.svg"),
+    },
+    {
         name: "Ant Design",
         imagePath: asset("images/antd.svg"),
     },
