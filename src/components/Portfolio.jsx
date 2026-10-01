@@ -12,11 +12,8 @@ const Portfolio = () => {
             <div className="intro-section">
                 <div className="sec-1">
                     <div className="hello-text">
-                        <h1>Hi&nbsp;</h1>
+                        <h1>Hola<span className="dot">,</span></h1>
                         <img src={asset("images/waving-hand.png")} alt="waving-hand" />
-                        <h1>
-                            <span className="dot">,</span>
-                        </h1>
                     </div>
 
                     <h1>I am Rizwanullah</h1>
