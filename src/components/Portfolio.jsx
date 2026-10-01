@@ -1,6 +1,6 @@
 import './Portfolio.css';
 import { FaLinkedin, FaHeart, FaGithub } from "react-icons/fa";
-import packageJson from "../../package.json";
+// import packageJson from "../../package.json";
 import { Tooltip } from 'antd';
 import { skills } from './common';
 
@@ -39,7 +39,7 @@ const Portfolio = () => {
 
             <div className="portfolio-heading">
                 <h1>
-                    Current <span className="stylish-underline">Projects</span>
+                    My <span className="stylish-underline">Projects</span>
                 </h1>
             </div>
 
@@ -52,24 +52,14 @@ const Portfolio = () => {
                 >
                     TP SmartSol
                 </a>
-            </div>
 
-            {/* <hr className="style-hr" /> */}
-
-            <div className="portfolio-heading">
-                <h1>
-                    Past <span className="stylish-underline">Projects</span>
-                </h1>
-            </div>
-
-            <div className="grid-wrapper">
                 <a
                     className="item flex"
                     href="https://imedslife-patient.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    ImedsLife Patient
+                    ImedsLife Patients
                 </a>
 
                 <a
@@ -78,7 +68,7 @@ const Portfolio = () => {
                     target="_blank"
                     rel="noreferrer"
                 >
-                    ImedsLife Doctor
+                    ImedsLife Doctors
                 </a>
 
                 <a
@@ -88,6 +78,15 @@ const Portfolio = () => {
                     rel="noreferrer"
                 >
                     Plrao & Co CA Firm
+                </a>
+
+                <a
+                    className="item flex"
+                    href="https://techmarathon-pms-vrweb-06-99-82.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Placement Management System
                 </a>
 
                 <a
@@ -133,23 +132,23 @@ const Portfolio = () => {
 
             <div className="badges-grid">
                 <div className="badge">
-                    <a
+                    {/* <a
                         href="https://rizwanrockzz.github.io/myself/Global%20Certifications/AWS%20Certified%20Cloud%20Practitioner%20certificate.pdf">
-                        <img
-                            src={`${import.meta.env.BASE_URL}images/badges/aws-certified-cloud-practitioner.png`}
-                            alt="aws-certified-cloud-practitioner"
-                        />
-                    </a>
+                    </a> */}
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/badges/aws-certified-cloud-practitioner.png`}
+                        alt="aws-certified-cloud-practitioner"
+                    />
                 </div>
 
                 <div className="badge">
-                    <a
+                    {/* <a
                         href="https://www.credential.net/441dc43b-2e38-4db3-820a-136ddbb91869#gs.3gn18n">
-                        <img
-                            src={`${import.meta.env.BASE_URL}images/badges/google-cloud-digital-leader.png`}
-                            alt="google-cloud-digital-leader"
-                        />
-                    </a>
+                    </a> */}
+                    <img
+                        src={`${import.meta.env.BASE_URL}images/badges/google-cloud-digital-leader.png`}
+                        alt="google-cloud-digital-leader"
+                    />
                 </div>
             </div>
 
@@ -171,9 +170,9 @@ const Portfolio = () => {
                 </p>
             </footer>
 
-            <div className="site-version">
+            {/* <div className="site-version">
                 <span>{packageJson.version}</span>
-            </div>
+            </div> */}
 
             <img
                 className="gradient-img-1"

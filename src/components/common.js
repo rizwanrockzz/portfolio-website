@@ -6,8 +6,8 @@ export const skills = [
         imagePath: asset("images/js.svg"),
     },
     {
-        name: "EJS",
-        imagePath: asset("images/ejs.svg"),
+        name: "TypeScript",
+        imagePath: asset("images/ts.svg"),
     },
     {
         name: "React",
@@ -20,14 +20,6 @@ export const skills = [
     {
         name: "Redux",
         imagePath: asset("images/redux.svg"),
-    },
-    {
-        name: "Ant Design",
-        imagePath: asset("images/antd.svg"),
-    },
-    {
-        name: "Bootstrap",
-        imagePath: asset("images/bootstrap-5.svg"),
     },
     {
         name: "Node",
@@ -76,5 +68,29 @@ export const skills = [
     {
         name: "Postman",
         imagePath: asset("images/postman.svg"),
+    },
+    {
+        name: "Linux",
+        imagePath: asset("images/linux.svg"),
+    },
+    {
+        name: "Apache Kafka",
+        imagePath: asset("images/kafka.svg"),
+    },
+    {
+        name: "WebSockets",
+        imagePath: asset("images/websocket.svg"),
+    },
+    {
+        name: "Ant Design",
+        imagePath: asset("images/antd.svg"),
+    },
+    {
+        name: "EJS",
+        imagePath: asset("images/ejs.svg"),
+    },
+    {
+        name: "Bootstrap",
+        imagePath: asset("images/bootstrap-5.svg"),
     },
 ];
